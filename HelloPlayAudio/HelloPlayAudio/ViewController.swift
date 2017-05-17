@@ -31,8 +31,11 @@ class ViewController: UIViewController {
                 audioPlayer?.rate = 2.0
                 audioPlayer?.numberOfLoops = -1
             } catch {
-                
+                print(error.localizedDescription)
             }
+            
+        } else {
+            print("No such file")
         }
     }
 
